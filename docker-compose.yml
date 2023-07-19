@@ -1,0 +1,19 @@
+services:
+  mongodb:
+    container_name: yt_mongodb
+    image: bitnami/mongodb:latest
+    restart: always
+    volumes:
+      - ./mongo-init.js:/docker-entrypoint-initdb.d/mongo-init.js:ro
+      - yt_mongodb:/bitnami/mongodb
+    ports:
+      - 27017:27017
+    environment:
+      - MONGODB_ROOT_PASSWORD=secure
+      - MONGODB_ADVERTISED_HOSTNAME=localhost
+      - MONGODB_REPLICA_SET_MODE=primary
+      - MONGODB_REPLICA_SET_NAME=rs0
+      - MONGODB_REPLICA_SET_KEY=replicasetkey123
+
+volumes:
+  yt_mongodb:

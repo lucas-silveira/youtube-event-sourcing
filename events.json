@@ -1,0 +1,90 @@
+[
+  {
+    "_id": {
+      "$oid": "64b7e5be37f51af0116264ef"
+    },
+    "key": "payment.created",
+    "orderId": "1ec885da-d25e-4333-9613-36e989083fe8",
+    "customerId": 123,
+    "data": {
+      "status": "pending",
+      "amount": 120.98,
+      "cardToken": "key_123"
+    },
+    "timestamp": {
+      "$date": "2023-07-18T10:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "64b7e5e037f51af0116264f1"
+    },
+    "key": "payment.authorized",
+    "orderId": "1ec885da-d25e-4333-9613-36e989083fe8",
+    "customerId": 123,
+    "data": {
+      "status": "authorized"
+    },
+    "timestamp": {
+      "$date": "2023-07-18T10:01:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "64b7e63237f51af0116264f3"
+    },
+    "key": "payment.fraud_analysis_sent",
+    "orderId": "1ec885da-d25e-4333-9613-36e989083fe8",
+    "customerId": 123,
+    "data": {
+      "status": "fraud_analysis_sent"
+    },
+    "timestamp": {
+      "$date": "2023-07-18T10:02:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "64b7e64837f51af0116264f5"
+    },
+    "key": "payment.fraud_analysis_approved",
+    "orderId": "1ec885da-d25e-4333-9613-36e989083fe8",
+    "customerId": 123,
+    "data": {
+      "status": "fraud_analysis_approved"
+    },
+    "timestamp": {
+      "$date": "2023-07-18T10:03:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "64b7e68d37f51af0116264f8"
+    },
+    "key": "payment.paid",
+    "orderId": "1ec885da-d25e-4333-9613-36e989083fe8",
+    "customerId": 123,
+    "data": {
+      "status": "paid",
+      "paidAmount": 120.98
+    },
+    "timestamp": {
+      "$date": "2023-07-18T10:04:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "64b7e6e637f51af0116264fa"
+    },
+    "key": "payment.created",
+    "orderId": "f2bd95ed-23b9-4897-949a-c5da7e54f387",
+    "customerId": 123,
+    "data": {
+      "status": "pending",
+      "amount": 9.9
+    },
+    "timestamp": {
+      "$date": "2023-07-18T10:01:00.000Z"
+    }
+  }
+]
